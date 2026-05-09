@@ -19,7 +19,7 @@ public class BurgerReceiptParameterizedTest {
         this.expectedIngredientType = expectedIngredientType;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: type={0}, expectedType={1}")
     public static Object[][] getTestData() {
         return new Object[][]{
                 {IngredientType.SAUCE, "sauce"},
